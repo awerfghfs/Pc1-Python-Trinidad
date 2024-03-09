@@ -1,0 +1,21 @@
+nombre_archivo = input("Ingrese el nombre del archivo: ")
+
+# la extensión del archivo
+punto_posicion = nombre_archivo.rfind('.')
+if punto_posicion != -1:
+    extension = nombre_archivo[punto_posicion + 1:].lower()
+else:
+    extension = None
+tipos_mime = {
+    'gif': 'image/gif',
+    'jpg': 'image/jpeg',
+    'jpeg': 'image/jpeg',
+    'png': 'image/png',
+    'pdf': 'application/pdf',
+    'txt': 'text/plain',
+    'zip': 'application/zip'
+}
+# tipo MIME correspondiente o 'application/octet-stream' si no se encuentra
+tipo_mime = tipos_mime.get(extension, 'application/octet-stream')
+
+print("Tipo MIME para {}: {}".format(nombre_archivo, tipo_mime))
