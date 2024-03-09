@@ -1,0 +1,21 @@
+
+# ingresar la hora en formato HH:MM
+hor_usuario = input("ingrese la hora en formato HH:MM: ")
+
+# horas y minutos como números flotante
+try:
+    hor, min = map(float, hor_usuario.split(":"))
+except ValueError:
+    print("Error:ingrese la hora en formato válido (HH:MM).")
+    exit()
+
+# si es hora de desayunar, almorzar o cenar
+if 7.0 <= hor <= 8.0:
+    print("hora de desayunar.")
+elif 12.0 <= hor  <= 13.0:
+    print("Es hora de almorzar.")
+elif 18.0 <= hor <= 19.0:
+    print("hora de cenar.")
+else:
+    print("hora de comer.")
+    
