@@ -1,0 +1,5 @@
+# nombre de usuario 
+nombre_usuario = input("ingrese el nombre del usuario: ")
+
+# Mostrar el saludo con el nombre del usuario
+print("¡Hola {}!", (nombre_usuario))
