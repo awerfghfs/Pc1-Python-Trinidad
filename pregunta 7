@@ -1,0 +1,25 @@
+# ingresar dos números
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+# mostrar el menú de opciones
+print("\nMenú de opciones:")
+print("1. Mostrar la suma de los dos números")
+print("2. Mostrar la resta (primer número menos el segundo)")
+print("3. Mostrar la multiplicación de los dos números")
+
+# elegir una opción
+opción = input("Seleccione una opción (1, 2, 3): ")
+
+# operación según la opción seleccionada
+if opción == '1':
+    resul = num1 + num2
+    print("La suma de {} y {} es: {}".format(num1, num2, resul))
+elif opción == '2':
+    resul = num1 - num2
+    print("La resta de {} y {} es: {}".format(num1, num2, resul))
+elif opción == '3':
+    resul  = num1 * num2
+    print("La multiplicación de {} y {} es: {}".format(num1, num2, resul))
+else:
+    print("Opción inválida. Elija 1, 2 o 3.")
