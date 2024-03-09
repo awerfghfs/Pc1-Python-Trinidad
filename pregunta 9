@@ -1,0 +1,9 @@
+#  lista original
+list_original = ['Di', 'buen', 'día', 'a', 'papa']
+
+# nueva lista invertida
+list_invertida = list(reversed(list_original))
+
+# lista original y la invertida
+print("Lista Original:", list_original)
+print("Lista Invertida:", list_invertida)
