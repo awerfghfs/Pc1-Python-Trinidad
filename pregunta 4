@@ -1,0 +1,12 @@
+# ingresar un entero positivo
+n = int(input("ingrese un entero positivo n: "))
+
+# verificar que el número ingresado sea positivo
+if n <= 0:
+    print("ingrese un entero positivo.")
+else:
+# la suma de los enteros desde 1 hasta N
+    suma = sum(range(1, n + 1))
+
+# mostrar la suma 
+    print("La suma de los enteros desde 1 hasta {} es: ", (suma))
