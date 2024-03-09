@@ -1,0 +1,13 @@
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+# lista original
+list_muest = ['Rojo', 'Verde', 'Blanco', 'Negro', 'Rosa', 'Amarillo']
+
+# eliminar elementos en las posiciones 0, 4 y 5
+posición_a_eliminar = [0, 4, 5]
+
+for posición in sorted(posición_a_eliminar, reverse=True):
+    if 0 <= posición < len(list_muest):
+        list_muest.pop(posición)
+
+print("Resultado ok:", list_muest)
