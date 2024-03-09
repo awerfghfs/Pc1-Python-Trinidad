@@ -1,0 +1,9 @@
+# elementos duplicados
+list_original = [1, 1, 2, 3, 4, 4, 5, 1]
+
+# convertir la lista a un conjunto 
+list_procesada = list(set(list_original))
+
+# el resultado
+print("List original:", list_original)
+print("List procesada:", list_procesada)
